@@ -154,19 +154,16 @@ body{
     border-radius: 8px; 
     margin-top: 10px;
 }
-.container6 {
+/* .container6 {
+    display: flex;
+    align-items: center; */
+.choose-plan .container {
     display: flex;
     align-items: center;
-}
-#Choose {
-    font-size: 50px;
-    margin-bottom: 20px;
+    justify-content: space-between;
     text-align: center;
-    padding-left: auto;
-    margin-left: 30px;
-    margin-top: 10px;
-
 }
+
 #p6 {
     font-size: 24px;
     margin-left: 30px;
@@ -177,14 +174,13 @@ body{
     align-items: center;
     text-align: center;
 }
-.plans {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    /* text-decoration: none; */
-    line-height: 1.6;
 
-}
+.plans .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 24px; 
+} 
 .article1 {
     padding: 20px;
     border-radius: 10px;
@@ -279,20 +275,14 @@ body{
     color: black;
     font-size: 16px;
     margin-top: 10px;
+
 }
-.container7 {
-    display: flex;
-    align-items: center;
-    background: #0b3c6d;
-    color: white;
+.everywhere .container {
+   display: flex;
+   text-align: center;
+   background: #0b3c6d; 
 }
 #your-work {
-    /* font-size: 50px;
-    margin-bottom: 20px;
-    /* text-align: center; */
-    /* padding-left: auto;
-    margin-left: 30px;
-    justify-content: center; */  font-size: 50px;
     margin-bottom: 20px;
     text-align: center;
     padding-left: auto;
@@ -332,35 +322,19 @@ body{
     border-radius: 8px; 
     margin-top: 10px;
 }
-.container9 {
-    display: flex;
+.our-asset .container {
+     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    gap: 50px;
-    margin-top: 50px;
+    gap: 24px;
+    justify-content: space-between;
 }
-#our-sponsors {
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    color: black;
+.our-sponsors {
+    align-items: center;
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
-}
-.logoos {
-
-    gap: 50px;
-}
-.logoos img {
-    gap: 50px;
-    margin-right: 120px;
-}
-#data-illu {
-    width: 500px;
-    height: auto;
-    margin-left: 100px;
-    margin-right: 44px;
-}
 .work-with .container {
   display: flex;
   justify-content: space-between;
@@ -379,53 +353,49 @@ body{
     height: auto;
     display: block;
     border-radius: 8px; 
-    margin-top: 10px;
+    margin-top: 10px; */ */
 }
-.container11 {
+.test-monial {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.testimonial {
+.oberon {
+    display: flex;
+    justify-content: space-between;
+}
+.head {
+    display: flex;
+    text-align: center;
+}
+
+/* .oberon {
+    display: flex;
+    align-items: center;
+} */
+ .testimonial {
     text-align: center;
     font-size: 35px;
 }
- .testimonial1 {
+ /* .testimonial1 {
     background-color: #e0e7ff;
     border-radius: 15px;
     padding: 30px;
-    width: 300px;
-    height: 200px;
-    /* margin-left: 100px; */
-    margin-top: 20px;
 }
 #oberon1 {
-    /* margin-top: 10px; */
-    /* display: flex; */
     text-align: right;
 }
 
-#avatar1 {
-    /* width: 50px; */
-    /* height: auto; */
-    border-radius: 50%;
-   /* margin-top: 20px; */
-}
-.testimonial-text {
-    margin-top: 10px;
-    /* display: flex; */
-
-}
 #head-of {
     font-size: 12px;
     text-align: right;
-}
+} */
 #span1 {
     /* font-size: 30px; */
     /* color: #e0e7ff; */
 }
-.testimonial2 {
+/* .testimonial2 {
     background-color: #0481ff;
     border-radius: 15px;
     padding: 30px;
@@ -442,7 +412,7 @@ body{
     height: 200px;
     margin-left: 50px;
     margin-top: 20px; */
-}
+} */
 .footer-try {
     text-align: center;
     justify-content: center;
@@ -493,6 +463,9 @@ body{
 }
 footer {
     background-color: #0b3c6d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .h3whitepace {
     margin-left: 100px;
@@ -544,7 +517,7 @@ footer {
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -598,4 +571,4 @@ footer {
     margin-bottom: 20px;
 }
 
-
+ */
