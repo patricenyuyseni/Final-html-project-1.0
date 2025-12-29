@@ -17,10 +17,10 @@ body{
 }
 .nav-container {
     max-width: 1200px;
-    margin: auto;
+    /* margin: auto; */
     padding: 16px 24px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 .nav-link {
@@ -30,6 +30,8 @@ body{
 .nav-link a {
     color: white;
     text-decoration: none;
+    list-style: none;
+    gap: 20px;
 }
 .nav-action {
     display: flex;
@@ -355,64 +357,45 @@ body{
     border-radius: 8px; 
     margin-top: 10px; */ */
 }
-.test-monial {
+ .test-monial {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 10px;
+    
+} 
+.testimonial1 {
+    background-color: azure;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
 
-}
-.oberon {
-    display: flex;
-    justify-content: space-between;
-}
-.head {
-    display: flex;
-    text-align: center;
-}
-
-/* .oberon {
-    display: flex;
-    align-items: center;
-} */
  .testimonial {
     text-align: center;
     font-size: 35px;
-}
- /* .testimonial1 {
-    background-color: #e0e7ff;
-    border-radius: 15px;
-    padding: 30px;
-}
-#oberon1 {
-    text-align: right;
-}
+} 
 
-#head-of {
-    font-size: 12px;
-    text-align: right;
-} */
-#span1 {
-    /* font-size: 30px; */
-    /* color: #e0e7ff; */
-}
-/* .testimonial2 {
+.testimonial2 {
     background-color: #0481ff;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     width: 300px;
-    height: 200px;
+    height: 250px;
     margin-left: 50px;
     margin-top: 20px;
 }
 .testimonial3 {
     background-color: #0481ff;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     width: 300px;
-    height: 200px;
+    height: 250px;
     margin-left: 50px;
-    margin-top: 20px; */
-} */
+    margin-top: 20px; 
+}
 .footer-try {
     text-align: center;
     justify-content: center;
@@ -457,22 +440,21 @@ body{
     width: 40px;
     height: auto;
 }
-.footer-info {
+  .footer-info {
     display: flex;
     background-color: #0b3c6d;
 }
 footer {
-    background-color: #0b3c6d;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+     background-color: #0b3c6d;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 .h3whitepace {
-    margin-left: 100px;
-    margin-top: 20px;
+     margin-left: 100px;
+    margin-top: 20px;  
 }
 #pw {
-    /* flex: 0 0 auto; */
+     flex: 0 0 auto; 
 }
 .resources {
     margin-left: 150px;
@@ -485,7 +467,8 @@ footer {
     display: flex;
     padding-bottom: 20px;
     background-color: #0b3c6d;
-    gap: 20px;
+    /* gap: 20px; */
+    justify-content: space-between;
     padding-left: 100px;
 }
 .product {
@@ -499,7 +482,7 @@ footer {
 .company {
     margin-left: 150px;
     margin-top: 20px;
-}
+} 
 .try-today-footer {
     margin-left: 50px;
     /* margin-top: 20px; */
@@ -509,9 +492,12 @@ footer {
     border: 1px solid black;
     background-color: #0481ff;
     height: 50px;
-    border-radius: 15px;
-    /* margin-left: 30px; */
+    border-radius: 15px
     width: 100px;
+} 
+.bbutton {
+    margin-top: 10px;
+    
 }
     
 
