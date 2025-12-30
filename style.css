@@ -499,6 +499,70 @@ footer {
     margin-top: 10px;
     
 }
+.cta {
+   background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+#get-started {
+    background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+#try-it-now {
+    background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+#let {
+    background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+#lets {
+    background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+#try-caskey {
+    background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+#read-more {
+    background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+#start-today {
+    background: transparent;
+    border: 1px solid white;
+    background-color: #0481ff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
     
 
 
