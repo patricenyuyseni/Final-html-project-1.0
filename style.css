@@ -1,7 +1,4 @@
 
-
-
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +10,6 @@ body {
   line-height: 1.6;
   color: #1e293b;
 }
-
-/* ===== GLOBAL ===== */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -39,7 +34,6 @@ button:hover {
   background: #4338ca;
 }
 
-/* ===== NAVBAR ===== */
 
 .nav-container {
   display: flex;
@@ -47,43 +41,39 @@ button:hover {
   justify-content: space-between;
 }
 
-/* Make nav horizontal */
 nav.nav-link {
   display: flex;
   align-items: center;
   gap: 40px; 
 }
 
-/* Nav list */
+
 nav.nav-link ul {
   display: flex;
   list-style: none;
   gap: 30px;
 }
 
-/* Nav links */
 nav.nav-link ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 15px;
 }
 
-/* Nav buttons */
 .nav-action {
   display: flex;
   gap: 15px;
 }
 
-/* Mobile: hide nav items */
 @media (max-width: 767px) {
   nav.nav-link ul,
   .nav-action {
-    display: none;
+    /* display: none; */
   }
 }
 
 .navbar {
-  background: #0f2a44;
+  background: #043873;
   padding: 15px 0;
 }
 
@@ -110,17 +100,16 @@ nav.nav-link ul li a {
 
 .login {
   background: transparent;
-  background-color: yellowgreen;
+  background-color: #ffe492;
   border: 1px solid #fff;
 }
 
 .try {
-  background: #4f46e5;
+  background: #419cf9;
 }
 
-/* ===== HERO ===== */
 .hero {
-  background: #0f2a44;
+  background: #043873;
   color: #fff;
   padding: 80px 0;
 }
@@ -135,7 +124,6 @@ nav.nav-link ul li a {
   margin-bottom: 25px;
 }
 
-/* ===== LIGHT SECTIONS ===== */
 .feature,
 .customized,
 .choose-plan,
@@ -219,7 +207,7 @@ article button {
     text-align: center;
     font-size: 50px;
 }
-/* ===== TESTIMONIALS ===== */
+
 .testimonial {
     text-align: center;
     font-size: 25px;
@@ -239,7 +227,7 @@ article button {
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
-/* Reduce quote icon size */
+
 .testimonial1 span,
 .testimonial2 span,
 .testimonial3 span {
@@ -250,7 +238,7 @@ article button {
   margin-top: 4px;
 }
 
-/* Reduce avatar image size */
+
 .testimonial1 img,
 .testimonial2 img,
 .testimonial3 img {
@@ -265,18 +253,18 @@ article button {
     background-color: #4f46e5;
 }
 .work-together {
-    background-color: #0f2a44;
+    background-color: #043873;
 }
 #work {
     color: white;
 }
 .everywhere {
-    background-color: #0f2a44;
+    background-color: #043873;
     text-align: center;
     color: white;
 }
 .work-with {
-    background-color: #0f2a44;
+    background-color: #043873;
 }
 #work-with {
     color: white;
@@ -285,7 +273,7 @@ article button {
     text-align: center;
 }
 .footer-bottom {
-    background-color: #0f2a44;
+    background-color: #043873;
     color: white;
 }
 #choose {
@@ -294,9 +282,9 @@ article button {
 
 
 
-/* ===== FOOTER ===== */
+
 footer {
-  background: #0f2a44;
+  background: #043873;
   color: #fff;
 }
 
@@ -324,7 +312,7 @@ footer {
   gap: 15px;
 }
 
-/* Our Sponsors section */
+
 .our-sponsors {
   background: #ffffff;
   padding: 50px 0;
@@ -358,7 +346,7 @@ footer {
   filter: grayscale(0);
   transform: scale(1.05);
 }
-/* Footer try icons */
+
 .footer-try .icons {
   margin-top: 25px;
   display: flex;
@@ -377,6 +365,11 @@ footer {
 .footer-try .icons img:hover {
   transform: scale(1.1);
 }
+.footer {
+  background-color: #043873;
+}
+  
+
 
 
 /* ===== DESKTOP ===== */
