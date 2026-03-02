@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 
 * {
   margin: 0;
@@ -10,16 +11,19 @@ body {
   line-height: 1.6;
   color: #1e293b;
 }
+
+img {
+  width: 100%;
+  display: block;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
+/* ================= BUTTONS ================= */
 
 button {
   padding: 12px 22px;
@@ -28,49 +32,16 @@ button {
   background: #4f46e5;
   color: #fff;
   cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  white-space: nowrap;
 }
 
 button:hover {
   background: #4338ca;
 }
 
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav.nav-link {
-  display: flex;
-  align-items: center;
-  gap: 40px; 
-}
-
-
-nav.nav-link ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-nav.nav-link ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.nav-action {
-  display: flex;
-  gap: 15px;
-}
-
-@media (max-width: 767px) {
-  nav.nav-link ul,
-  .nav-action {
-    /* display: none; */
-  }
-}
+/* ================= NAVBAR ================= */
 
 .navbar {
   background: #043873;
@@ -83,9 +54,17 @@ nav.nav-link ul li a {
   justify-content: space-between;
 }
 
+/* This keeps links + buttons in one row on desktop */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link ul {
   list-style: none;
-  display: none;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-link a {
@@ -95,23 +74,65 @@ nav.nav-link ul li a {
 }
 
 .nav-action {
-  display: none;
+  display: flex;
+  gap: 15px;
 }
 
 .login {
-  background: transparent;
-  background-color: #ffe492;
-  border: 1px solid #fff;
+  background: #ffe492;
+  color: #000;
 }
 
 .try {
   background: #419cf9;
 }
 
-.hero {
+/* ================= SECTIONS ================= */
+
+section {
+  padding: 70px 0;
+}
+
+.hero,
+.work-together,
+.everywhere,
+.work-with,
+footer {
   background: #043873;
-  color: #fff;
-  padding: 80px 0;
+  color: white;
+}
+
+.feature,
+.customized,
+.choose,
+.plans,
+.our-sponsors,
+.testimonial,
+.your-data {
+  background: #ffffff;
+}
+
+.use-as {
+  background: #f8fafc;
+}
+
+/* ================= FLEX LAYOUT ================= */
+
+.hero .container,
+.feature .container,
+.work-together .container,
+.use-as .container,
+.customized .container,
+.your-data .container,
+.work-with .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text,
+.hero-image {
+  flex: 1;
 }
 
 .hero-text h2 {
@@ -119,61 +140,27 @@ nav.nav-link ul li a {
   margin-bottom: 20px;
 }
 
-.hero-text p {
-  color: #cbd5e1;
-  margin-bottom: 25px;
-}
-
-.feature,
-.customized,
-.choose-plan,
-.our-sponsors,
-.testimonial {
-  background: #ffffff;
-}
-
-.work-together,
-.use-as,
-.everywhere,
-.work-with,
-.your-data {
-  background: #f8fafc;
-}
-
-section {
-  padding: 70px 0;
-}
-
-.hero-text h3,
-.hero-text h2 {
+.hero-text h3 {
   margin-bottom: 15px;
 }
 
 .hero-text p {
-  color: #475569;
   margin-bottom: 20px;
 }
 
-/* ===== PLANS ===== */
+/* ================= PLANS ================= */
+
 .plans .container {
   display: flex;
-  flex-direction: column;
   gap: 25px;
 }
 
-.choose {
-    text-align: center;
-
-}
-.choose h3 {
-    font-size: 25px;
-}
-
 article {
+  flex: 1;
   background: #fff;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .article2 {
@@ -196,97 +183,53 @@ article button {
   width: 100%;
 }
 
-/* ===== SPONSORS ===== */
-.our-asset .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-.sponsors {
-    text-align: center;
-    font-size: 50px;
+/* ================= SPONSORS ================= */
+
+.our-sponsors {
+  text-align: center;
 }
 
-.testimonial {
-    text-align: center;
-    font-size: 25px;
+.our-asset .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
 }
+
+.our-asset img {
+  max-width: 120px;
+  transition: 0.3s ease;
+}
+
+.our-asset img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= TESTIMONIAL ================= */
+
 .test-monial {
   display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 
 .testimonial1,
 .testimonial2,
 .testimonial3 {
-  background: #fff;
+  flex: 1;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
-
-.testimonial1 span,
-.testimonial2 span,
-.testimonial3 span {
-  font-size: 26px;  
-  font-weight: 600;
-  color: #4f46e5;
-  line-height: 1;
-  margin-top: 4px;
-}
-
-
-.testimonial1 img,
-.testimonial2 img,
-.testimonial3 img {
-  width: 40px;       
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .testimonial2,
 .testimonial3 {
-    background-color: #4f46e5;
-}
-.work-together {
-    background-color: #043873;
-}
-#work {
-    color: white;
-}
-.everywhere {
-    background-color: #043873;
-    text-align: center;
-    color: white;
-}
-.work-with {
-    background-color: #043873;
-}
-#work-with {
-    color: white;
-}
-#our-sponsor {
-    text-align: center;
-}
-.footer-bottom {
-    background-color: #043873;
-    color: white;
-}
-#choose {
-    text-align: center;
-}
-
-
-
-
-footer {
-  background: #043873;
+  background: #4f46e5;
   color: #fff;
 }
+
+/* ================= FOOTER ================= */
 
 .footer-try {
   text-align: center;
@@ -299,7 +242,7 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -307,87 +250,37 @@ footer {
   border-top: 1px solid #334155;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-}
-
-
-.our-sponsors {
-  background: #ffffff;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.our-sponsors .text p {
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #1e293b;
-  margin-bottom: 40px;
-}
-
-.our-asset .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
   flex-wrap: wrap;
-  padding: 0 20px;
-}
-.our-asset img {
-  max-width: 120px;
-  height: auto;
-  filter: grayscale(0.2);
-  transition: filter 0.3s ease;
-  cursor: pointer;
 }
 
-.our-asset img:hover {
-  filter: grayscale(0);
-  transform: scale(1.05);
-}
+/* ================= MOBILE ================= */
 
-.footer-try .icons {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+@media (max-width: 767px) {
 
-.footer-try .icons img {
-  width: 28px;
-  height: auto;
-  cursor: pointer;
-  filter: brightness(0) invert(1); /* makes icons white */
-  transition: transform 0.3s ease;
-}
-
-.footer-try .icons img:hover {
-  transform: scale(1.1);
-}
-.footer {
-  background-color: #043873;
-}
-  
-
-
-
-/* ===== DESKTOP ===== */
-@media (min-width: 768px) {
-
-  .nav-link ul {
-    display: flex;
-    gap: 30px;
-  }
-
-  .nav-action {
-    display: flex;
+  .nav-container {
+    flex-direction: column;
     gap: 15px;
   }
 
-  .our-sponsors {
-    display: flex;
-    text-align: center;
+  .nav-link {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-link ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-action {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-action button {
+    width: 100%;
   }
 
   .hero .container,
@@ -397,30 +290,29 @@ footer {
   .customized .container,
   .your-data .container,
   .work-with .container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-
-  .hero-text,
-  .hero-image {
-    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
   }
 
   .plans .container {
-    flex-direction: row;
-  }
-
-  article {
-    flex: 1;
+    flex-direction: column;
   }
 
   .test-monial {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .hero-text h2 {
+    font-size: 26px;
   }
 }
