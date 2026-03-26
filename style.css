@@ -12,11 +12,13 @@ body {
   color: #1e293b;
 }
 
+/* Images for big illustrations only */
 img {
-  width: 100%;
   display: block;
+  max-width: 100%;
 }
 
+/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -54,7 +56,6 @@ button:hover {
   justify-content: space-between;
 }
 
-/* This keeps links + buttons in one row on desktop */
 .nav-link {
   display: flex;
   align-items: center;
@@ -253,6 +254,22 @@ article button {
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+/* ================= ICON FIX (VERY IMPORTANT) ================= */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icons img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 /* ================= MOBILE ================= */
